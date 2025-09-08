@@ -2,6 +2,8 @@ name: Build and Publish to NPM
 
 on:
   push:
+    branches:
+      - '*'
     tags:
       - '*'
 

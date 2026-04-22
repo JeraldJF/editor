@@ -44,8 +44,10 @@
     --gray-400: hsl(var(--gray-hs), 40%); // sub heading #666666
     --gray-800: var(--gray); // text color #333333
 
-    // basetheme — Sunbird Portal orange/white theme
-    --primary-color: #a85236;  // sunbird-brick (terracotta orange)
+    // basetheme — matches Sunbird Portal's sunbird-brick color (#a85236).
+    // NOTE: This editor loads in an iframe so it CANNOT inherit the portal's CSS variables.
+    // To change the theme, update --primary-color here AND update --sunbird-brick in the portal's :root.
+    --primary-color: #a85236;  // keep in sync with portal: hsl(var(--sunbird-brick)) = #a85236
     --secondary-color: #008840;
     --tertiary-color: #e55a28;
 

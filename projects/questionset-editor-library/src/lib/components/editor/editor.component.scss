@@ -32,7 +32,7 @@ lib-questionset-editor {
   .add-to-library {
     position: relative;
     z-index: 998 !important;
-    background: #e5edf5;
+    background: var(--primary-0);
     .sb-required {
       color: #ff4558;
       padding-left: 2px;
@@ -75,11 +75,16 @@ lib-questionset-editor {
       select,
       .sb-textarea,
       .list-border {
-        border: 1px solid rgba(34, 36, 38, 0.15) !important;
+        border: 1px solid var(--gray-100) !important;
         padding: 0.85rem 0.5rem !important;
-        border-radius: 0.28571429rem;
+        border-radius: 0.5rem;
         font-size: 0.785rem !important;
         font-weight: 500;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        &:focus {
+          border-color: var(--primary-300) !important;
+          box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.12) !important;
+        }
         // text-transform: capitalize;
       }
       select {
@@ -123,8 +128,8 @@ lib-questionset-editor {
         }
       }
       .sb-keywordbox {
-        border: 1px solid rgba(34, 36, 38, 0.15) !important;
-        border-radius: 0.28571429rem;
+        border: 1px solid var(--gray-100) !important;
+        border-radius: 0.5rem;
         font-size: 0.785rem !important;
         font-weight: 500;
         padding: 0 !important;
@@ -290,11 +295,15 @@ lib-questionset-editor {
   .ck.ck-editor__top
   .ck-sticky-panel
   .ck-toolbar {
-    border-left: 1px solid #c4c4c4 !important;
-    border-right: 1px solid #c4c4c4 !important;
+    border-left: 1px solid var(--gray-100) !important;
+    border-right: 1px solid var(--gray-100) !important;
+    border-top: 1px solid var(--gray-100) !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
     border-bottom: 0 !important;
+    background-color: var(--primary-0) !important;
   }
   sb-dynamic-richtext
   .ck-rounded-corners
@@ -303,8 +312,14 @@ lib-questionset-editor {
   sb-dynamic-richtext
   .ck.ck-editor__main
   > .ck-editor__editable.ck-rounded-corners {
-    border: 1px solid #c4c4c4 !important;
-    border-color: var(--ck-color-base-border) !important;
+    border: 1px solid var(--gray-100) !important;
+    border-color: var(--gray-100) !important;
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+    &:focus {
+      border-color: var(--primary-300) !important;
+      box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.12) !important;
+    }
   }
 
 
@@ -551,8 +566,8 @@ lib-questionset-editor {
     .sb-timer-input{
       width: 10rem;
       font-size: .785rem!important;
-      border: 1px solid rgba(34,36,38,.15)!important;
-      border-radius: .28571429rem;
+      border: 1px solid var(--gray-100)!important;
+      border-radius: 0.5rem;
       padding: 12px 10px;
       margin-right: 5px;
       height: 44px;

@@ -69,7 +69,7 @@ select {
   &:focus,
   &:focus-visible {
     outline: none;
-    border-color: var(--primary-300);
+    border-color: var(--color-brand-outline);
     box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.15);
   }
 
@@ -92,7 +92,7 @@ select {
   transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
 
   &:focus {
-    border-color: var(--primary-300) !important;
+    border-color: var(--color-brand-outline) !important;
     box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.15) !important;
   }
 }
@@ -109,7 +109,7 @@ select {
 
   &.active,
   &:focus {
-    border-color: var(--primary-300) !important;
+    border-color: var(--color-brand-outline) !important;
     box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.15) !important;
   }
 
@@ -125,7 +125,7 @@ select {
       &:hover,
       &.active,
       &.selected {
-        background-color: var(--primary-0) !important;
+        background-color: var(--color-brand-tint) !important;
         color: var(--spark-brick) !important;
         font-weight: 500;
       }
@@ -150,7 +150,7 @@ select {
 
 .ui.checkbox input:focus ~ .box:before,
 .ui.checkbox input:focus ~ label:before {
-  border-color: var(--primary-300) !important;
+  border-color: var(--color-brand-outline) !important;
   box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.15) !important;
 }
 
@@ -196,14 +196,14 @@ select {
 
 .fancy-tree .fancytree-node:hover > .fancytree-title,
 .fancytree-node:hover > .fancytree-title {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   color: var(--spark-brick) !important;
   border-radius: 0.25rem;
 }
 
 .fancy-tree .fancytree-active > .fancytree-title,
 .fancytree-active > .fancytree-title {
-  background-color: var(--primary-100) !important;
+  background-color: var(--color-brand-subtle) !important;
   color: var(--spark-brick) !important;
   border-left: 3px solid var(--spark-brick);
   border-radius: 0 0.25rem 0.25rem 0;
@@ -212,13 +212,13 @@ select {
 // Plain tree hover
 .plain-tree .tree-node:hover,
 .sb-tree-node:hover {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   border-radius: 0.375rem;
 }
 
 .plain-tree .tree-node.active,
 .sb-tree-node.active {
-  background-color: var(--primary-100) !important;
+  background-color: var(--color-brand-subtle) !important;
   border-left: 3px solid var(--spark-brick) !important;
   color: var(--spark-brick) !important;
 }
@@ -282,10 +282,10 @@ select {
   }
 
   .sb-btn-outline-primary {
-    border-color: var(--primary-300) !important;
+    border-color: var(--color-brand-outline) !important;
     color: var(--spark-brick) !important;
     border-radius: 0.5rem !important;
-    &:hover { background-color: var(--primary-0) !important; }
+    &:hover { background-color: var(--color-brand-tint) !important; }
     &.sb-btn-outline-disabled,
     &[disabled] {
       background-color: var(--spark-surface) !important;
@@ -322,7 +322,7 @@ select {
 }
 
 .sb-progress-status .completed {
-  color: var(--secondary-200) !important; // green for completed
+  color: var(--color-success) !important; // green for completed
 }
 
 // Semantic UI progress bar
@@ -348,15 +348,15 @@ select {
 
 .iziToast.iziToast-color-blue,
 .sb-toast-info {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   border-left: 4px solid var(--spark-brick) !important;
   color: var(--spark-charcoal) !important;
 }
 
 .iziToast.iziToast-color-green,
 .sb-toast-success {
-  background-color: var(--secondary-0) !important;
-  border-left: 4px solid var(--secondary-200) !important;
+  background-color: var(--color-success-bg) !important;
+  border-left: 4px solid var(--color-success) !important;
 }
 
 .iziToast.iziToast-color-red,
@@ -409,7 +409,7 @@ input[type="range"] {
 
 .publish-checklist .checklist-item.checked .item-icon,
 .sb-checklist-item.checked .item-icon {
-  color: var(--secondary-200); // green tick for completed
+  color: var(--color-success); // green tick for completed
 }
 
 // -----------------------------------------------------------------------------
@@ -427,11 +427,11 @@ input[type="range"] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-200);
+  background: var(--color-brand-divider);
   border-radius: 3px;
 
   &:hover {
-    background: var(--primary-300);
+    background: var(--color-brand-outline);
   }
 }
 
@@ -446,9 +446,9 @@ input[type="range"] {
 
 .sb-label-primary,
 .ui.label.sb-label-primary {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   color: var(--spark-brick) !important;
-  border: 1px solid var(--primary-200) !important;
+  border: 1px solid var(--color-brand-divider) !important;
 }
 
 // Status chips
@@ -462,7 +462,7 @@ input[type="range"] {
 
   &.draft    { background-color: var(--spark-card-alt);     color: var(--spark-gray-75); }
   &.review   { background-color: var(--tertiary-0); color: var(--tertiary-400); }
-  &.live     { background-color: var(--secondary-0); color: var(--secondary-400); }
+  &.live     { background-color: var(--color-success-bg); color: var(--color-selected-deep); }
   &.rejected { background-color: var(--red-0);      color: var(--red-400); }
 }
 
@@ -473,7 +473,7 @@ input[type="range"] {
 .ck.ck-toolbar {
   border-radius: 0.5rem 0.5rem 0 0 !important;
   border-color: var(--spark-border-card) !important;
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
 }
 
 .ck.ck-editor__main > .ck-editor__editable {
@@ -481,14 +481,14 @@ input[type="range"] {
   border-color: var(--spark-border-card) !important;
 
   &.ck-focused {
-    border-color: var(--primary-300) !important;
+    border-color: var(--color-brand-outline) !important;
     box-shadow: 0 0 0 3px rgba(var(--rc-rgba-primary), 0.15) !important;
   }
 }
 
 .ck.ck-button.ck-on,
 .ck.ck-button:hover:not(.ck-disabled) {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   color: var(--spark-brick) !important;
 }
 
@@ -499,7 +499,7 @@ input[type="range"] {
 .asset-card:hover,
 .library-card:hover,
 .sb-asset-card:hover {
-  border-color: var(--primary-300) !important;
+  border-color: var(--color-brand-outline) !important;
   box-shadow: 0 4px 12px 0 rgba(var(--rc-rgba-primary), 0.18) !important;
 }
 
@@ -529,10 +529,10 @@ input[type="range"] {
 
   &.sb-btn-outline-primary {
     background-color: transparent !important;
-    border: 1px solid var(--primary-300) !important;
+    border: 1px solid var(--color-brand-outline) !important;
     color: var(--spark-brick) !important;
     &:hover {
-      background-color: var(--primary-0) !important;
+      background-color: var(--color-brand-tint) !important;
       border-color: var(--spark-brick) !important;
     }
     &.sb-btn-outline-disabled,
@@ -557,7 +557,7 @@ input[type="range"] {
     border-radius: 0.5rem !important;
     &:hover,
     &:focus {
-      background-color: var(--primary-0) !important;
+      background-color: var(--color-brand-tint) !important;
       border-color: var(--spark-brick-dark) !important;
       color: var(--spark-brick-dark) !important;
     }
@@ -620,7 +620,7 @@ input[type="range"] {
 }
 
 .ckeditor-tool__label {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   color: var(--spark-brick) !important;
   border-radius: 0.5rem 0.5rem 0 0 !important;
   font-weight: 600 !important;
@@ -661,7 +661,7 @@ input[type="range"] {
 // Fancytree active — no border at all
 .fancytree-active > .fancytree-title,
 span.fancytree-active span.fancytree-title {
-  background-color: var(--primary-0) !important;
+  background-color: var(--color-brand-tint) !important;
   color: var(--spark-brick) !important;
   border: none !important;
 }
@@ -704,7 +704,7 @@ span.fancytree-active span.fancytree-title {
 
   &:hover,
   &:focus {
-    background-color: var(--primary-0) !important;
+    background-color: var(--color-brand-tint) !important;
     border-color: var(--spark-brick-dark) !important;
     color: var(--spark-brick-dark) !important;
   }
@@ -728,7 +728,7 @@ span.fancytree-active span.fancytree-title {
 
   &:hover,
   &:focus {
-    background-color: var(--primary-0) !important;
+    background-color: var(--color-brand-tint) !important;
     border-color: var(--spark-brick-dark) !important;
     color: var(--spark-brick-dark) !important;
   }
@@ -756,7 +756,7 @@ span.fancytree-active span.fancytree-title {
 
   &:hover,
   &:focus {
-    background-color: var(--primary-0) !important;
+    background-color: var(--color-brand-tint) !important;
     border-color: var(--spark-brick-dark) !important;
     color: var(--spark-brick-dark) !important;
   }

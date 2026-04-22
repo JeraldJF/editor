@@ -3,7 +3,7 @@
 }
 sui-select {
   width: 100%;
-  border: 1px solid var(--gray-100);
+  border: 1px solid var(--color-border);
   font-size: 0.8rem;
   padding: 0.4rem 0.2rem;
   background: #fff;
@@ -55,20 +55,20 @@ sui-select {
 
 .ckeditor-tool__option,
 .ckeditor-tool__question{
-  border: 1px solid var(--gray-100);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   border-top: 0;
   position: relative;
   display: flow-root;
 }
 .ckeditor-tool__solution, .ckeditor-tool__question-readonly, .ckeditor-tool__option-readonly {
-  border: 1px solid var(--gray-100);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   margin-bottom: -4px;
 }
 
 .ckeditor-tool__label {
-  background-color: var(--primary-0);
+  background-color: var(--color-brand-tint);
   color: var(--primary-color)!important;
   font-weight: 600;
   border-top-left-radius: 0.5rem;
@@ -76,7 +76,7 @@ sui-select {
 }
 
 .mcq-checkbox-answer {
-  background: var(--gray-0);
+  background: var(--color-surface-alt);
   padding: 8px;
   display: flex;
   justify-content: center;
@@ -139,7 +139,7 @@ sui-select {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.5rem;
-  border-bottom: solid 1px var(--gray-100);
+  border-bottom: solid 1px var(--color-border);
   &:last-child{
     border-bottom: none;
   }
@@ -201,7 +201,7 @@ sui-select {
       select,
       .sb-textarea,
       .list-border {
-        border: 1px solid var(--gray-100) !important;
+        border: 1px solid var(--color-border) !important;
         padding: 12px 8px !important;
         border-radius: 0.5rem;
         font-size: 0.785rem !important;
@@ -234,7 +234,7 @@ sui-select {
     }
   }
     .sb-keywordbox{
-      border: 1px solid var(--gray-100) !important;
+      border: 1px solid var(--color-border) !important;
       border-radius: 0.5rem;
       font-size: 0.785rem !important;
       font-weight: 500;

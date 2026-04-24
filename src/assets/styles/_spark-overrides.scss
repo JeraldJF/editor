@@ -780,3 +780,10 @@ span.fancytree-active span.fancytree-title {
     pointer-events: none;
   }
 }
+
+// -----------------------------------------------------------------------------
+// Semantic UI scrolling modal — override static positioning from semantic.min.css
+// -----------------------------------------------------------------------------
+.modals.dimmer .ui.scrolling.modal {
+  position: fixed !important;
+}
